@@ -12,7 +12,6 @@ export default function Login() {
               alt="Salon"
               layout="fill"
               objectFit="cover"
-              className="rounded"
             />
           </div>
         </div>
