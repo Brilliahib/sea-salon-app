@@ -17,7 +17,7 @@ export default function Form() {
           </Button>
         </form>
         <p className="text-muted-foreground text-sm">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <a href="" className="underline font-semibold">
             Sign Up
           </a>
