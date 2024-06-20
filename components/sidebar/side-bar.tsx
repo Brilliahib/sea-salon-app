@@ -102,7 +102,7 @@ const Sidebar = () => {
 
       {/* normal sidebar */}
       <aside
-        className={`fixed top-16 z-30 shrink-0 md:sticky md:block pad-l anim relative hidden h-screen grow flex-col border-r md:flex md:w-fit`}
+        className={`fixed top-16 z-30 shrink-0 md:sticky md:block pad-l anim relative hidden grow flex-col border-r md:flex md:w-fit`}
       >
         <ScrollArea className="flex h-full flex-col pr-6 md:pr-8 lg:pr-12 md:space-y-8">
           {SidebarGeneralItems.map((item, index) => (

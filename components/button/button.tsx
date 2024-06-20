@@ -1,13 +1,18 @@
 import { cn } from "@/lib/utils";
 
-const Button = ({
-  children = "Button",
-  className,
-  variant = "primary",
-}: {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "destructive" | "outline";
+  disabled?: boolean;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  children = "Button",
+  className,
+  variant = "primary",
+  disabled = false,
+  ...props
 }) => {
   const buttonVariant = {
     primary:
@@ -25,8 +30,11 @@ const Button = ({
       className={cn(
         "anim flex items-center rounded-sm border px-4 py-1 font-semibold",
         className,
-        buttonVariant[variant]
+        buttonVariant[variant],
+        disabled && "opacity-50 cursor-not-allowed" // Add styles for disabled state
       )}
+      disabled={disabled}
+      {...props}
     >
       {children}
     </button>
