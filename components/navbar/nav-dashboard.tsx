@@ -12,7 +12,7 @@ const NavbarDashboard = () => {
 
       <nav className="flex items-center justify-between">
         <ul className="flex items-center gap-x-8">
-          <li className="hidden sm:block">
+          <li className="block">
             <div className="flex items-center gap-x-3">
               <h1 className="text-muted-foreground text-sm">
                 Hello, Akhila Zahra!

@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 export default function Dashboard() {
   return (
     <>
-      <div className="lg:w-full lg:grid lg:grid-cols-3 gap-x-6 sm:block sm:gap-y-8">
+      <div className="lg:w-full lg:grid lg:grid-cols-3 gap-x-6 sm:block space-y-4 md:space-y-0">
         <div className="w-full">
           <CardReservation title="Today's Reservation">
             <TodayReservation />

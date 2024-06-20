@@ -23,7 +23,7 @@ export default function PlaygroundLayout({
       >
         <Sidebar />
         <div className="w-full">
-          <main className="shiki flex w-full grow flex-col overflow-x-hidden px-4 pb-6 md:px-8 py-4 md:py-8 md:pb-8 lg:pb-12 lg:pr-0">
+          <main className="shiki flex w-full grow flex-col overflow-x-hidden md:pl-8 pb-6 py-4 md:py-8 md:pb-8 lg:pb-12 lg:pr-0">
             {children}
           </main>
         </div>

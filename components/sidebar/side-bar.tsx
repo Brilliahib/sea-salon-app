@@ -30,7 +30,7 @@ const Sidebar = () => {
   return (
     <>
       {/* mobile sidebar */}
-      <aside className="pad-x flex h-fit items-center gap-x-2 py-3 md:hidden">
+      <aside className="flex h-fit items-center gap-x-2 py-3 md:hidden">
         <GanttChart
           onClick={() => setOpen(true)}
           className="anim h-9 w-9 cursor-pointer p-0.5 hover:bg-accent"
@@ -38,7 +38,7 @@ const Sidebar = () => {
         <Input placeholder="Search..." className="h-9 w-full" />
         {/* menu */}
         <div
-          className={`pad-l absolute left-0 top-0 z-20 flex w-full grow flex-col bg-background ${
+          className={`pad-l absolute pad-x left-0 top-0 z-20 flex w-full grow flex-col bg-background ${
             open ? "anim-slow h-full" : "anim h-0"
           }`}
         >

@@ -8,29 +8,29 @@ import {
 } from "lucide-react";
 import { ElementType } from "react";
 
-interface SidebarSub {
+export interface SidebarSub {
   name: string;
   href: string;
   icon?: ElementType;
 }
 
-interface SidebarGen {
+export interface SidebarGen {
   name: string;
   href: string;
   icon?: ElementType;
 }
 
-interface SidebarSubItems {
+export interface SidebarSubItems {
   name: string;
   subItems: SidebarSub[];
 }
 
-interface SidebarGenItems {
+export interface SidebarGenItems {
   name: string;
   generalItems: SidebarGen[];
 }
 
-const SidebarGeneralItems: SidebarGenItems[] = [
+export const SidebarGeneralItems: SidebarGenItems[] = [
   {
     name: "Main",
     generalItems: [
@@ -53,57 +53,7 @@ const SidebarGeneralItems: SidebarGenItems[] = [
   },
 ];
 
-const SidebarItems: SidebarSubItems[] = [
-  {
-    name: "Component",
-    subItems: [
-      {
-        name: "Button",
-        icon: ArrowRight,
-        href: "button",
-      },
-      {
-        name: "Badge",
-        icon: ArrowRight,
-        href: "badge",
-      },
-      {
-        name: "Card",
-        icon: ArrowRight,
-        href: "card",
-      },
-      {
-        name: "Input",
-        icon: ArrowRight,
-        href: "input",
-      },
-      {
-        name: "Profile",
-        icon: ArrowRight,
-        href: "profile",
-      },
-      {
-        name: "Marquee",
-        icon: ArrowRight,
-        href: "marquee",
-      },
-      {
-        name: "Link",
-        icon: ArrowRight,
-        href: "link",
-      },
-      {
-        name: "Chat",
-        icon: ArrowRight,
-        href: "chat",
-      },
-      {
-        name: "Toast",
-        icon: ArrowRight,
-        href: "toast",
-      },
-    ],
-  },
+export const SidebarItems: SidebarSubItems[] = [
   {
     name: "Admin",
     subItems: [
@@ -120,5 +70,3 @@ const SidebarItems: SidebarSubItems[] = [
     ],
   },
 ];
-
-export { SidebarItems, SidebarGeneralItems };
